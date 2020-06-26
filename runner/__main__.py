@@ -1,3 +1,4 @@
+import csv
 import json
 import sys
 import glob
@@ -45,6 +46,17 @@ for problem_path in problem_files:
                 config_file_name, problem_file_name))
             solution_path = "{}/solution_{}.json".format(out_dir, attempt)
             solution = solver.solve(problem_path, config_path, solution_path)
-            solutions.setdefault(out_dir, []).append(solution)
+            solutions.setdefault((config_file_name, problem_file_name), []).append(solution)
 
-print(solutions)
+
+# create csv for best-known solution analysis
+with open("{}/best_known_solutions.csv".format(config.data.outDir), mode='w') as best_known_file:
+    best_known_writer = csv.writer(best_known_file, delimiter=',', quotechar='"',  quoting=csv.QUOTE_MINIMAL)
+    best_known_writer.writerow(["Config", "Problem", "Sequence", "Duration", "Generations", "Speed", "Costs", "Waiting", "Tours", "Unassigned"])
+    for ((config_file_name, problem_file_name), interation_solutions) in solutions.items():
+        for idx, solution in enumerate(interation_solutions):
+            best_known_writer.writerow([
+                config_file_name, problem_file_name, idx, solution.extras.metrics.duration, solution.extras.metrics.generations,
+                "{:.4f}".format(round(solution.extras.metrics.speed, 2)), "{:.4f}".format(round(solution.statistic.cost, 2)),
+                solution.statistic.times.waiting, len(solution.tours), len(solution.unassigned)
+            ])

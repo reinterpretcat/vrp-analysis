@@ -21,7 +21,7 @@ class SolverClient:
         :param config_path: Path to configuration
         :param solution_path: Path where solution should be stored
         """
-        p = subprocess.run([self.cli_path, 'solve', 'pragmatic', problem_path,'-o', solution_path],
+        p = subprocess.run([self.cli_path, 'solve', 'pragmatic', problem_path, '-c', config_path, '-o', solution_path],
             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         if p.returncode == 0:
