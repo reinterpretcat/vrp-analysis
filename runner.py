@@ -28,17 +28,13 @@ class SolverClient:
         else:
             pass
 
-# if len(sys.argv) < 4:
-#     print("Provide path to cli, experiment root path and number of samples")
-#     sys.exit(1)
-# else:
-#     cli_path = sys.argv[1]
-#     config_path = sys.argv[2]
-#     samples = int(sys.argv[3])
-
-cli_path = "/home/builuk/playground/vrp-rst/target/release/vrp-cli"
-experiment_path = "/home/builuk/playground/vrp-analysis/experiments/demo"
-samples = 5
+if len(sys.argv) < 4:
+    print("Provide path to cli, experiment dir path and number of samples")
+    sys.exit(1)
+else:
+    cli_path = sys.argv[1]
+    experiment_path = sys.argv[2]
+    samples = int(sys.argv[3])
 
 
 print("getting data in experiment root path: '{}'".format(experiment_path))
