@@ -3,23 +3,15 @@
       "initialMethods": [
         {
           "weight": 10,
-          "type": "cheapest"
-        },
-        {
-          "weight": 10,
           "type": "regret",
           "start": 2,
           "end": 4
-        },
-        {
-          "weight": 5,
-          "type": "blinks"
         }
       ],
-      "initialSize": 4,
-      "populationSize": 8,
-      "offspringSize": 8,
-      "eliteSize": 4
+      "initialSize": 2,
+      "populationSize": 4,
+      "offspringSize": 4,
+      "eliteSize": 2
     },
     "mutation": {
       "type": "ruin-recreate",
@@ -232,43 +224,16 @@
       ],
       "recreates": [
         {
-          "weight": 100,
-          "type": "cheapest"
-        },
-        {
           "weight": 90,
           "type": "regret",
           "start": 2,
           "end": 4
-        },
-        {
-          "weight": 30,
-          "type": "blinks"
-        },
-        {
-          "weight": 20,
-          "type": "regret",
-          "start": 5,
-          "end": 8
-        },
-        {
-          "weight": 10,
-          "type": "gaps",
-          "min": 2
-        },
-        {
-          "weight": 5,
-          "type": "nearest"
         }
       ]
     },
     "termination": {
-      "maxTime": 300,
-      "maxGenerations": 3000,
-      "variation": {
-        "sample": 1000,
-        "cv": 0.05
-      }
+      "maxTime": 600,
+      "maxGenerations": 2000
     },
     "telemetry": {
       "logging": {
