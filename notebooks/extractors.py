@@ -4,24 +4,24 @@ def get_configs(df):
     """
     Gets all config names
     """
-    return df['Config'].unique()
+    configs = df['Config'].unique()
+    configs.sort()
+    return configs
 
 def get_problems(df):
     """
     Gets all problem names
     """
-    return df['Problem'].unique()
+    problems = df['Problem'].unique()
+    problems.sort()
+    return problems
 
 
-def extract_columns(df, config_name, problem_name, target_columns, new_labels):
+def extract_columns(df, config_name, problem_name, target_columns):
     """
     Extracts columns data for specific config and problem with new labels
     """
-    columns = {}
-    for idx, target_column in enumerate(target_columns):
-        columns[target_column] = new_labels[idx]
-
     column = df.loc[(df['Config'] == config_name) & (df['Problem'] == problem_name)]
-    column = column[target_columns].rename(columns = columns).reset_index(drop=True)
+    column = column[target_columns].reset_index(drop=True)
 
     return column
