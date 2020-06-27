@@ -13,10 +13,15 @@ def get_problems(df):
     return df['Problem'].unique()
 
 
-def extract_column(df, config_name, problem_name, target_column, new_label):
+def extract_columns(df, config_name, problem_name, target_columns, new_labels):
     """
-    Extracts a single column data for specific config and problem with new label
+    Extracts columns data for specific config and problem with new labels
     """
+    columns = {}
+    for idx, target_column in enumerate(target_columns):
+        columns[target_column] = new_labels[idx]
+
     column = df.loc[(df['Config'] == config_name) & (df['Problem'] == problem_name)]
-    column = column[[target_column]].rename(columns = {target_column: new_label}).reset_index(drop=True)
+    column = column[target_columns].rename(columns = columns).reset_index(drop=True)
+
     return column
