@@ -6,11 +6,13 @@ from pathlib import Path
 from Helpers import Generic
 from SolverClient import SolverClient
 
-if len(sys.argv) < 2:
-    print("Provide path to experiment config")
-    sys.exit(1)
-else:
-    config_path = sys.argv[1]
+# if len(sys.argv) < 2:
+#     print("Provide path to experiment config")
+#     sys.exit(1)
+# else:
+#     config_path = sys.argv[1]
+
+config_path = "/home/builuk/playground/vrp-analysis/data/experiments/example.json"
 
 
 # read config
@@ -42,7 +44,7 @@ for problem_path in problem_files:
 
         for attempt in range(config.runner.samples):
             iteration += 1
-            print("iteration {} of {}, config: {}, problem {}".format(iteration, total_iterations,
+            print("iteration {} of {}, config: '{}', problem: '{}'".format(iteration, total_iterations,
                 config_file_name, problem_file_name))
             solution_path = "{}/solution_{}.json".format(out_dir, attempt)
             solution = solver.solve(problem_path, config_path, solution_path)
@@ -52,7 +54,7 @@ for problem_path in problem_files:
 # create csv for best-known solution analysis
 with open("{}/best_known_solutions.csv".format(config.data.outDir), mode='w') as best_known_file:
     best_known_writer = csv.writer(best_known_file, delimiter=',', quotechar='"',  quoting=csv.QUOTE_MINIMAL)
-    best_known_writer.writerow(["Config", "Problem", "Sequence", "Duration", "Generations", "Speed", "Costs", "Waiting", "Tours", "Unassigned"])
+    best_known_writer.writerow(["Config", "Problem", "Sequence", "Duration", "Generations", "Speed", "Cost", "Waiting", "Tours", "Unassigned"])
     for ((config_file_name, problem_file_name), interation_solutions) in solutions.items():
         for idx, solution in enumerate(interation_solutions):
             best_known_writer.writerow([

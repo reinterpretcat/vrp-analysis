@@ -11,7 +11,7 @@
         "outDir": "data/out"
     },
     "runner": {
-        "cli": "vrp-cli",
-        "samples": 3
+        "cli": "/home/builuk/playground/vrp-rst/target/release/vrp-cli",
+        "samples": 5
     }
 }
