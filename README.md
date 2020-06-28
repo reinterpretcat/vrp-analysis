@@ -25,4 +25,8 @@ Please note, that the solver uses routing matrix approximation via great-circle 
 ## Analyze results
 
 * run `jupyter notebook`
-* open desired notebook and change path to test data
+* select one of available notebooks
+* change path to test data
+* run kernel
+
+Note: you can install missing dependencies directly from notebook, e.g. `%pip install pandas`

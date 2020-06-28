@@ -1,0 +1,2602 @@
+{
+  "statistic": {
+    "cost": 705.863,
+    "distance": 483415,
+    "duration": 96836,
+    "times": {
+      "driving": 48339,
+      "serving": 30000,
+      "waiting": 497,
+      "break": 18000
+    }
+  },
+  "tours": [
+    {
+      "vehicleId": "vehicle_1",
+      "typeId": "vehicle",
+      "shiftIndex": 0,
+      "stops": [
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T09:00:00Z",
+            "departure": "2020-05-01T09:00:00Z"
+          },
+          "distance": 0,
+          "load": [
+            20
+          ],
+          "activities": [
+            {
+              "jobId": "departure",
+              "type": "departure"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.41255052555488,
+            "lng": 13.511984771757128
+          },
+          "time": {
+            "arrival": "2020-05-01T09:05:34Z",
+            "departure": "2020-05-01T09:10:34Z"
+          },
+          "distance": 3336,
+          "load": [
+            19
+          ],
+          "activities": [
+            {
+              "jobId": "job81",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.40757519902939,
+            "lng": 13.36322753418236
+          },
+          "time": {
+            "arrival": "2020-05-01T09:27:26Z",
+            "departure": "2020-05-01T09:32:26Z"
+          },
+          "distance": 13453,
+          "load": [
+            18
+          ],
+          "activities": [
+            {
+              "jobId": "job96",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.42232820994321,
+            "lng": 13.312769061247431
+          },
+          "time": {
+            "arrival": "2020-05-01T09:38:46Z",
+            "departure": "2020-05-01T09:43:46Z"
+          },
+          "distance": 17252,
+          "load": [
+            17
+          ],
+          "activities": [
+            {
+              "jobId": "job22",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4083377818705,
+            "lng": 13.299124699213982
+          },
+          "time": {
+            "arrival": "2020-05-01T09:46:47Z",
+            "departure": "2020-05-01T09:51:47Z"
+          },
+          "distance": 19064,
+          "load": [
+            16
+          ],
+          "activities": [
+            {
+              "jobId": "job24",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.41989161003242,
+            "lng": 13.289129334594884
+          },
+          "time": {
+            "arrival": "2020-05-01T09:54:12Z",
+            "departure": "2020-05-01T09:59:12Z"
+          },
+          "distance": 20518,
+          "load": [
+            15
+          ],
+          "activities": [
+            {
+              "jobId": "job48",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.41128834763799,
+            "lng": 13.208754458015235
+          },
+          "time": {
+            "arrival": "2020-05-01T10:08:26Z",
+            "departure": "2020-05-01T10:13:26Z"
+          },
+          "distance": 26059,
+          "load": [
+            14
+          ],
+          "activities": [
+            {
+              "jobId": "job63",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.399588593226696,
+            "lng": 13.221805451831512
+          },
+          "time": {
+            "arrival": "2020-05-01T10:16:04Z",
+            "departure": "2020-05-01T10:21:04Z"
+          },
+          "distance": 27634,
+          "load": [
+            13
+          ],
+          "activities": [
+            {
+              "jobId": "job35",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.377398393284594,
+            "lng": 13.183775800854626
+          },
+          "time": {
+            "arrival": "2020-05-01T10:27:01Z",
+            "departure": "2020-05-01T10:32:01Z"
+          },
+          "distance": 31209,
+          "load": [
+            12
+          ],
+          "activities": [
+            {
+              "jobId": "job44",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.3635080012747,
+            "lng": 13.109500432367872
+          },
+          "time": {
+            "arrival": "2020-05-01T10:40:49Z",
+            "departure": "2020-05-01T10:45:49Z"
+          },
+          "distance": 36489,
+          "load": [
+            11
+          ],
+          "activities": [
+            {
+              "jobId": "job26",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.354158694373176,
+            "lng": 13.198893743704613
+          },
+          "time": {
+            "arrival": "2020-05-01T10:56:06Z",
+            "departure": "2020-05-01T11:01:06Z"
+          },
+          "distance": 42655,
+          "load": [
+            10
+          ],
+          "activities": [
+            {
+              "jobId": "job4",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.360478391970645,
+            "lng": 13.255506062028113
+          },
+          "time": {
+            "arrival": "2020-05-01T11:07:37Z",
+            "departure": "2020-05-01T11:12:37Z"
+          },
+          "distance": 46568,
+          "load": [
+            9
+          ],
+          "activities": [
+            {
+              "jobId": "job25",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.37607935963811,
+            "lng": 13.270054683436731
+          },
+          "time": {
+            "arrival": "2020-05-01T11:15:57Z",
+            "departure": "2020-05-01T11:20:57Z"
+          },
+          "distance": 48566,
+          "load": [
+            8
+          ],
+          "activities": [
+            {
+              "jobId": "job41",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.33328320929547,
+            "lng": 13.298023891247492
+          },
+          "time": {
+            "arrival": "2020-05-01T11:29:30Z",
+            "departure": "2020-05-01T11:34:30Z"
+          },
+          "distance": 53696,
+          "load": [
+            7
+          ],
+          "activities": [
+            {
+              "jobId": "job13",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.35763609683896,
+            "lng": 13.42272947547506
+          },
+          "time": {
+            "arrival": "2020-05-01T11:49:20Z",
+            "departure": "2020-05-01T11:54:20Z"
+          },
+          "distance": 62599,
+          "load": [
+            6
+          ],
+          "activities": [
+            {
+              "jobId": "job58",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.34853386154301,
+            "lng": 13.469140054487545
+          },
+          "time": {
+            "arrival": "2020-05-01T11:59:51Z",
+            "departure": "2020-05-01T12:04:51Z"
+          },
+          "distance": 65913,
+          "load": [
+            5
+          ],
+          "activities": [
+            {
+              "jobId": "job19",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.33718374529796,
+            "lng": 13.482569977035022
+          },
+          "time": {
+            "arrival": "2020-05-01T12:07:27Z",
+            "departure": "2020-05-01T12:12:27Z"
+          },
+          "distance": 67472,
+          "load": [
+            4
+          ],
+          "activities": [
+            {
+              "jobId": "job59",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.3606192644144,
+            "lng": 13.498864635544962
+          },
+          "time": {
+            "arrival": "2020-05-01T12:17:10Z",
+            "departure": "2020-05-01T12:22:10Z"
+          },
+          "distance": 70306,
+          "load": [
+            3
+          ],
+          "activities": [
+            {
+              "jobId": "job64",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.34167639176646,
+            "lng": 13.523616947714643
+          },
+          "time": {
+            "arrival": "2020-05-01T12:26:40Z",
+            "departure": "2020-05-01T13:31:40Z"
+          },
+          "distance": 73004,
+          "load": [
+            2
+          ],
+          "activities": [
+            {
+              "jobId": "job52",
+              "type": "delivery",
+              "location": {
+                "lat": 52.34167639176646,
+                "lng": 13.523616947714643
+              },
+              "time": {
+                "start": "2020-05-01T12:26:40Z",
+                "end": "2020-05-01T12:31:40Z"
+              }
+            },
+            {
+              "jobId": "break",
+              "type": "break",
+              "location": {
+                "lat": 52.34167639176646,
+                "lng": 13.523616947714643
+              },
+              "time": {
+                "start": "2020-05-01T12:31:40Z",
+                "end": "2020-05-01T13:31:40Z"
+              }
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.35760943580138,
+            "lng": 13.591393538954229
+          },
+          "time": {
+            "arrival": "2020-05-01T13:39:54Z",
+            "departure": "2020-05-01T13:44:54Z"
+          },
+          "distance": 77942,
+          "load": [
+            1
+          ],
+          "activities": [
+            {
+              "jobId": "job77",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.3426952301891,
+            "lng": 13.636997885481524
+          },
+          "time": {
+            "arrival": "2020-05-01T13:50:46Z",
+            "departure": "2020-05-01T13:55:46Z"
+          },
+          "distance": 81459,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "job43",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T14:19:52Z",
+            "departure": "2020-05-01T14:19:52Z"
+          },
+          "distance": 95920,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "arrival",
+              "type": "arrival"
+            }
+          ]
+        }
+      ],
+      "statistic": {
+        "cost": 140.144,
+        "distance": 95920,
+        "duration": 19192,
+        "times": {
+          "driving": 9592,
+          "serving": 6000,
+          "waiting": 0,
+          "break": 3600
+        }
+      }
+    },
+    {
+      "vehicleId": "vehicle_3",
+      "typeId": "vehicle",
+      "shiftIndex": 0,
+      "stops": [
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T09:00:00Z",
+            "departure": "2020-05-01T09:00:00Z"
+          },
+          "distance": 0,
+          "load": [
+            20
+          ],
+          "activities": [
+            {
+              "jobId": "departure",
+              "type": "departure"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.64770676684856,
+            "lng": 13.435025289475222
+          },
+          "time": {
+            "arrival": "2020-05-01T09:42:43Z",
+            "departure": "2020-05-01T09:47:43Z"
+          },
+          "distance": 25633,
+          "load": [
+            19
+          ],
+          "activities": [
+            {
+              "jobId": "job36",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.68782669429366,
+            "lng": 13.392629486354297
+          },
+          "time": {
+            "arrival": "2020-05-01T09:56:33Z",
+            "departure": "2020-05-01T10:01:33Z"
+          },
+          "distance": 30937,
+          "load": [
+            18
+          ],
+          "activities": [
+            {
+              "jobId": "job8",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.67638913963792,
+            "lng": 13.295440217814877
+          },
+          "time": {
+            "arrival": "2020-05-01T10:12:41Z",
+            "departure": "2020-05-01T10:17:41Z"
+          },
+          "distance": 37618,
+          "load": [
+            17
+          ],
+          "activities": [
+            {
+              "jobId": "job60",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.67531651688878,
+            "lng": 13.26834383376842
+          },
+          "time": {
+            "arrival": "2020-05-01T10:20:44Z",
+            "departure": "2020-05-01T10:25:44Z"
+          },
+          "distance": 39451,
+          "load": [
+            16
+          ],
+          "activities": [
+            {
+              "jobId": "job7",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.66754196859657,
+            "lng": 13.249953299582554
+          },
+          "time": {
+            "arrival": "2020-05-01T10:28:15Z",
+            "departure": "2020-05-01T10:33:15Z"
+          },
+          "distance": 40964,
+          "load": [
+            15
+          ],
+          "activities": [
+            {
+              "jobId": "job66",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.631653485148945,
+            "lng": 13.230994817879122
+          },
+          "time": {
+            "arrival": "2020-05-01T10:40:15Z",
+            "departure": "2020-05-01T10:45:15Z"
+          },
+          "distance": 45159,
+          "load": [
+            14
+          ],
+          "activities": [
+            {
+              "jobId": "job39",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.591077464839174,
+            "lng": 13.201882839336228
+          },
+          "time": {
+            "arrival": "2020-05-01T10:53:28Z",
+            "departure": "2020-05-01T10:58:28Z"
+          },
+          "distance": 50086,
+          "load": [
+            13
+          ],
+          "activities": [
+            {
+              "jobId": "job49",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.6094800945752,
+            "lng": 13.17473717474533
+          },
+          "time": {
+            "arrival": "2020-05-01T11:03:03Z",
+            "departure": "2020-05-01T11:08:03Z"
+          },
+          "distance": 52837,
+          "load": [
+            12
+          ],
+          "activities": [
+            {
+              "jobId": "job14",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.61277632365408,
+            "lng": 13.166953593956077
+          },
+          "time": {
+            "arrival": "2020-05-01T11:09:07Z",
+            "departure": "2020-05-01T11:14:07Z"
+          },
+          "distance": 53478,
+          "load": [
+            11
+          ],
+          "activities": [
+            {
+              "jobId": "job16",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.62456547524359,
+            "lng": 13.13252649006201
+          },
+          "time": {
+            "arrival": "2020-05-01T11:18:34Z",
+            "departure": "2020-05-01T11:23:34Z"
+          },
+          "distance": 56149,
+          "load": [
+            10
+          ],
+          "activities": [
+            {
+              "jobId": "job45",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.63965379825538,
+            "lng": 13.107703346260308
+          },
+          "time": {
+            "arrival": "2020-05-01T11:27:31Z",
+            "departure": "2020-05-01T11:32:31Z"
+          },
+          "distance": 58523,
+          "load": [
+            9
+          ],
+          "activities": [
+            {
+              "jobId": "job74",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.60601037150603,
+            "lng": 13.141680795580164
+          },
+          "time": {
+            "arrival": "2020-05-01T11:39:50Z",
+            "departure": "2020-05-01T11:44:50Z"
+          },
+          "distance": 62916,
+          "load": [
+            8
+          ],
+          "activities": [
+            {
+              "jobId": "job17",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.55793464607724,
+            "lng": 13.13442486241082
+          },
+          "time": {
+            "arrival": "2020-05-01T11:53:47Z",
+            "departure": "2020-05-01T11:58:47Z"
+          },
+          "distance": 68290,
+          "load": [
+            7
+          ],
+          "activities": [
+            {
+              "jobId": "job46",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.55921059139334,
+            "lng": 13.112872728563284
+          },
+          "time": {
+            "arrival": "2020-05-01T12:01:14Z",
+            "departure": "2020-05-01T12:06:14Z"
+          },
+          "distance": 69755,
+          "load": [
+            6
+          ],
+          "activities": [
+            {
+              "jobId": "job65",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.557718297397614,
+            "lng": 13.110025054812244
+          },
+          "time": {
+            "arrival": "2020-05-01T12:06:39Z",
+            "departure": "2020-05-01T12:11:39Z"
+          },
+          "distance": 70009,
+          "load": [
+            5
+          ],
+          "activities": [
+            {
+              "jobId": "job51",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.53718578293086,
+            "lng": 13.108609368441504
+          },
+          "time": {
+            "arrival": "2020-05-01T12:15:28Z",
+            "departure": "2020-05-01T12:20:28Z"
+          },
+          "distance": 72297,
+          "load": [
+            4
+          ],
+          "activities": [
+            {
+              "jobId": "job83",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.524656589261056,
+            "lng": 13.104559162654924
+          },
+          "time": {
+            "arrival": "2020-05-01T12:22:50Z",
+            "departure": "2020-05-01T12:27:50Z"
+          },
+          "distance": 73718,
+          "load": [
+            3
+          ],
+          "activities": [
+            {
+              "jobId": "job82",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.48586391539876,
+            "lng": 13.11450217644591
+          },
+          "time": {
+            "arrival": "2020-05-01T12:35:07Z",
+            "departure": "2020-05-01T13:40:07Z"
+          },
+          "distance": 78089,
+          "load": [
+            2
+          ],
+          "activities": [
+            {
+              "jobId": "job32",
+              "type": "delivery",
+              "location": {
+                "lat": 52.48586391539876,
+                "lng": 13.11450217644591
+              },
+              "time": {
+                "start": "2020-05-01T12:35:07Z",
+                "end": "2020-05-01T12:40:07Z"
+              }
+            },
+            {
+              "jobId": "break",
+              "type": "break",
+              "location": {
+                "lat": 52.48586391539876,
+                "lng": 13.11450217644591
+              },
+              "time": {
+                "start": "2020-05-01T12:40:07Z",
+                "end": "2020-05-01T13:40:07Z"
+              }
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.48693880758705,
+            "lng": 13.123420275092403
+          },
+          "time": {
+            "arrival": "2020-05-01T13:41:09Z",
+            "departure": "2020-05-01T13:46:09Z"
+          },
+          "distance": 78705,
+          "load": [
+            1
+          ],
+          "activities": [
+            {
+              "jobId": "job86",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.491837017269816,
+            "lng": 13.18982821465031
+          },
+          "time": {
+            "arrival": "2020-05-01T13:53:42Z",
+            "departure": "2020-05-01T13:58:42Z"
+          },
+          "distance": 83239,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "job37",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T14:32:33Z",
+            "departure": "2020-05-01T14:32:33Z"
+          },
+          "distance": 103550,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "arrival",
+              "type": "arrival"
+            }
+          ]
+        }
+      ],
+      "statistic": {
+        "cost": 145.475,
+        "distance": 103550,
+        "duration": 19953,
+        "times": {
+          "driving": 10353,
+          "serving": 6000,
+          "waiting": 0,
+          "break": 3600
+        }
+      }
+    },
+    {
+      "vehicleId": "vehicle_5",
+      "typeId": "vehicle",
+      "shiftIndex": 0,
+      "stops": [
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T09:00:00Z",
+            "departure": "2020-05-01T09:00:00Z"
+          },
+          "distance": 0,
+          "load": [
+            20
+          ],
+          "activities": [
+            {
+              "jobId": "departure",
+              "type": "departure"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.35947456437396,
+            "lng": 13.587159792798506
+          },
+          "time": {
+            "arrival": "2020-05-01T09:17:43Z",
+            "departure": "2020-05-01T09:22:43Z"
+          },
+          "distance": 10627,
+          "load": [
+            19
+          ],
+          "activities": [
+            {
+              "jobId": "job89",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.370995663971776,
+            "lng": 13.663076030364689
+          },
+          "time": {
+            "arrival": "2020-05-01T09:31:35Z",
+            "departure": "2020-05-01T09:36:35Z"
+          },
+          "distance": 15944,
+          "load": [
+            18
+          ],
+          "activities": [
+            {
+              "jobId": "job47",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.3628424735166,
+            "lng": 13.685586690455418
+          },
+          "time": {
+            "arrival": "2020-05-01T09:39:33Z",
+            "departure": "2020-05-01T09:44:33Z"
+          },
+          "distance": 17723,
+          "load": [
+            17
+          ],
+          "activities": [
+            {
+              "jobId": "job3",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.3633790952168,
+            "lng": 13.690119244921233
+          },
+          "time": {
+            "arrival": "2020-05-01T09:45:04Z",
+            "departure": "2020-05-01T09:50:04Z"
+          },
+          "distance": 18037,
+          "load": [
+            16
+          ],
+          "activities": [
+            {
+              "jobId": "job15",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.38976740791954,
+            "lng": 13.681492414757448
+          },
+          "time": {
+            "arrival": "2020-05-01T09:55:04Z",
+            "departure": "2020-05-01T10:00:04Z"
+          },
+          "distance": 21032,
+          "load": [
+            15
+          ],
+          "activities": [
+            {
+              "jobId": "job94",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4147778018424,
+            "lng": 13.59562102765024
+          },
+          "time": {
+            "arrival": "2020-05-01T10:10:50Z",
+            "departure": "2020-05-01T10:15:50Z"
+          },
+          "distance": 27495,
+          "load": [
+            14
+          ],
+          "activities": [
+            {
+              "jobId": "job69",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.47473318058734,
+            "lng": 13.491419263049035
+          },
+          "time": {
+            "arrival": "2020-05-01T10:32:02Z",
+            "departure": "2020-05-01T10:37:02Z"
+          },
+          "distance": 37218,
+          "load": [
+            13
+          ],
+          "activities": [
+            {
+              "jobId": "job67",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.489009322868526,
+            "lng": 13.482399771620624
+          },
+          "time": {
+            "arrival": "2020-05-01T10:39:52Z",
+            "departure": "2020-05-01T10:44:52Z"
+          },
+          "distance": 38921,
+          "load": [
+            12
+          ],
+          "activities": [
+            {
+              "jobId": "job87",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.530126233413625,
+            "lng": 13.40605361203616
+          },
+          "time": {
+            "arrival": "2020-05-01T10:56:23Z",
+            "departure": "2020-05-01T11:01:23Z"
+          },
+          "distance": 45828,
+          "load": [
+            11
+          ],
+          "activities": [
+            {
+              "jobId": "job85",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.52127652095051,
+            "lng": 13.354813445986528
+          },
+          "time": {
+            "arrival": "2020-05-01T11:07:24Z",
+            "departure": "2020-05-01T11:12:24Z"
+          },
+          "distance": 49435,
+          "load": [
+            10
+          ],
+          "activities": [
+            {
+              "jobId": "job11",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.53626565276608,
+            "lng": 13.341435525926816
+          },
+          "time": {
+            "arrival": "2020-05-01T11:15:34Z",
+            "departure": "2020-05-01T11:20:34Z"
+          },
+          "distance": 51334,
+          "load": [
+            9
+          ],
+          "activities": [
+            {
+              "jobId": "job78",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.55610569276909,
+            "lng": 13.282173839874588
+          },
+          "time": {
+            "arrival": "2020-05-01T11:28:12Z",
+            "departure": "2020-05-01T11:33:12Z"
+          },
+          "distance": 55914,
+          "load": [
+            8
+          ],
+          "activities": [
+            {
+              "jobId": "job95",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.578965456015,
+            "lng": 13.27882186466296
+          },
+          "time": {
+            "arrival": "2020-05-01T11:37:27Z",
+            "departure": "2020-05-01T11:42:27Z"
+          },
+          "distance": 58469,
+          "load": [
+            7
+          ],
+          "activities": [
+            {
+              "jobId": "job27",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.59901182277381,
+            "lng": 13.291448855960471
+          },
+          "time": {
+            "arrival": "2020-05-01T11:46:26Z",
+            "departure": "2020-05-01T11:51:26Z"
+          },
+          "distance": 60858,
+          "load": [
+            6
+          ],
+          "activities": [
+            {
+              "jobId": "job72",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.59071338060169,
+            "lng": 13.259068086449185
+          },
+          "time": {
+            "arrival": "2020-05-01T11:55:24Z",
+            "departure": "2020-05-01T12:00:24Z"
+          },
+          "distance": 63235,
+          "load": [
+            5
+          ],
+          "activities": [
+            {
+              "jobId": "job34",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.58151924278057,
+            "lng": 13.25539853772616
+          },
+          "time": {
+            "arrival": "2020-05-01T12:02:09Z",
+            "departure": "2020-05-01T12:07:09Z"
+          },
+          "distance": 64288,
+          "load": [
+            4
+          ],
+          "activities": [
+            {
+              "jobId": "job61",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.54628620350716,
+            "lng": 13.193393002235348
+          },
+          "time": {
+            "arrival": "2020-05-01T12:16:43Z",
+            "departure": "2020-05-01T13:30:00Z"
+          },
+          "distance": 70032,
+          "load": [
+            3
+          ],
+          "activities": [
+            {
+              "jobId": "job70",
+              "type": "delivery",
+              "location": {
+                "lat": 52.54628620350716,
+                "lng": 13.193393002235348
+              },
+              "time": {
+                "start": "2020-05-01T12:16:43Z",
+                "end": "2020-05-01T12:21:43Z"
+              }
+            },
+            {
+              "jobId": "break",
+              "type": "break",
+              "location": {
+                "lat": 52.54628620350716,
+                "lng": 13.193393002235348
+              },
+              "time": {
+                "start": "2020-05-01T12:21:43Z",
+                "end": "2020-05-01T13:30:00Z"
+              }
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.517902205550435,
+            "lng": 13.26051544799668
+          },
+          "time": {
+            "arrival": "2020-05-01T13:39:14Z",
+            "departure": "2020-05-01T13:44:14Z"
+          },
+          "distance": 75568,
+          "load": [
+            2
+          ],
+          "activities": [
+            {
+              "jobId": "job97",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.518582470827525,
+            "lng": 13.283509157778187
+          },
+          "time": {
+            "arrival": "2020-05-01T13:46:50Z",
+            "departure": "2020-05-01T13:51:50Z"
+          },
+          "distance": 77127,
+          "load": [
+            1
+          ],
+          "activities": [
+            {
+              "jobId": "job10",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.50939620848023,
+            "lng": 13.295896972982888
+          },
+          "time": {
+            "arrival": "2020-05-01T13:54:02Z",
+            "departure": "2020-05-01T13:59:02Z"
+          },
+          "distance": 78450,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "job56",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T14:24:28Z",
+            "departure": "2020-05-01T14:24:28Z"
+          },
+          "distance": 93708,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "arrival",
+              "type": "arrival"
+            }
+          ]
+        }
+      ],
+      "statistic": {
+        "cost": 141.08160000000004,
+        "distance": 93708,
+        "duration": 19468,
+        "times": {
+          "driving": 9371,
+          "serving": 6000,
+          "waiting": 497,
+          "break": 3600
+        }
+      }
+    },
+    {
+      "vehicleId": "vehicle_2",
+      "typeId": "vehicle",
+      "shiftIndex": 0,
+      "stops": [
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T09:00:00Z",
+            "departure": "2020-05-01T09:00:00Z"
+          },
+          "distance": 0,
+          "load": [
+            20
+          ],
+          "activities": [
+            {
+              "jobId": "departure",
+              "type": "departure"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.42246426026806,
+            "lng": 13.486970609679044
+          },
+          "time": {
+            "arrival": "2020-05-01T09:02:45Z",
+            "departure": "2020-05-01T09:07:45Z"
+          },
+          "distance": 1653,
+          "load": [
+            19
+          ],
+          "activities": [
+            {
+              "jobId": "job62",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.43069173143306,
+            "lng": 13.502842135169704
+          },
+          "time": {
+            "arrival": "2020-05-01T09:10:06Z",
+            "departure": "2020-05-01T09:15:06Z"
+          },
+          "distance": 3067,
+          "load": [
+            18
+          ],
+          "activities": [
+            {
+              "jobId": "job31",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.453876558585975,
+            "lng": 13.533583695468456
+          },
+          "time": {
+            "arrival": "2020-05-01T09:20:38Z",
+            "departure": "2020-05-01T09:25:38Z"
+          },
+          "distance": 6386,
+          "load": [
+            17
+          ],
+          "activities": [
+            {
+              "jobId": "job9",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.45324827288764,
+            "lng": 13.555618915313216
+          },
+          "time": {
+            "arrival": "2020-05-01T09:28:08Z",
+            "departure": "2020-05-01T09:33:08Z"
+          },
+          "distance": 7882,
+          "load": [
+            16
+          ],
+          "activities": [
+            {
+              "jobId": "job40",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.47351701386327,
+            "lng": 13.525108402228163
+          },
+          "time": {
+            "arrival": "2020-05-01T09:38:14Z",
+            "departure": "2020-05-01T09:43:14Z"
+          },
+          "distance": 10944,
+          "load": [
+            15
+          ],
+          "activities": [
+            {
+              "jobId": "job5",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.47728388318167,
+            "lng": 13.491813033760138
+          },
+          "time": {
+            "arrival": "2020-05-01T09:47:04Z",
+            "departure": "2020-05-01T09:52:04Z"
+          },
+          "distance": 13240,
+          "load": [
+            14
+          ],
+          "activities": [
+            {
+              "jobId": "job84",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.494881636434734,
+            "lng": 13.529104204156535
+          },
+          "time": {
+            "arrival": "2020-05-01T09:57:24Z",
+            "departure": "2020-05-01T10:02:24Z"
+          },
+          "distance": 16438,
+          "load": [
+            13
+          ],
+          "activities": [
+            {
+              "jobId": "job38",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.502384095575934,
+            "lng": 13.619297055779487
+          },
+          "time": {
+            "arrival": "2020-05-01T10:12:41Z",
+            "departure": "2020-05-01T10:17:41Z"
+          },
+          "distance": 22607,
+          "load": [
+            12
+          ],
+          "activities": [
+            {
+              "jobId": "job98",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.56381625771929,
+            "lng": 13.673742521573828
+          },
+          "time": {
+            "arrival": "2020-05-01T10:30:38Z",
+            "departure": "2020-05-01T10:35:38Z"
+          },
+          "distance": 30376,
+          "load": [
+            11
+          ],
+          "activities": [
+            {
+              "jobId": "job50",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.62285634739123,
+            "lng": 13.691777498111763
+          },
+          "time": {
+            "arrival": "2020-05-01T10:46:46Z",
+            "departure": "2020-05-01T10:51:46Z"
+          },
+          "distance": 37061,
+          "load": [
+            10
+          ],
+          "activities": [
+            {
+              "jobId": "job100",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.64682228616754,
+            "lng": 13.67061605719387
+          },
+          "time": {
+            "arrival": "2020-05-01T10:56:49Z",
+            "departure": "2020-05-01T11:01:49Z"
+          },
+          "distance": 40088,
+          "load": [
+            9
+          ],
+          "activities": [
+            {
+              "jobId": "job93",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.668524790378214,
+            "lng": 13.68487672335223
+          },
+          "time": {
+            "arrival": "2020-05-01T11:06:09Z",
+            "departure": "2020-05-01T11:11:09Z"
+          },
+          "distance": 42689,
+          "load": [
+            8
+          ],
+          "activities": [
+            {
+              "jobId": "job79",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.681404630007094,
+            "lng": 13.680965987556077
+          },
+          "time": {
+            "arrival": "2020-05-01T11:13:35Z",
+            "departure": "2020-05-01T11:18:35Z"
+          },
+          "distance": 44147,
+          "load": [
+            7
+          ],
+          "activities": [
+            {
+              "jobId": "job99",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.66057182961985,
+            "lng": 13.6619449074574
+          },
+          "time": {
+            "arrival": "2020-05-01T11:23:00Z",
+            "departure": "2020-05-01T11:28:00Z"
+          },
+          "distance": 46798,
+          "load": [
+            6
+          ],
+          "activities": [
+            {
+              "jobId": "job73",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.65880361047367,
+            "lng": 13.640566591020225
+          },
+          "time": {
+            "arrival": "2020-05-01T11:30:26Z",
+            "departure": "2020-05-01T11:35:26Z"
+          },
+          "distance": 48255,
+          "load": [
+            5
+          ],
+          "activities": [
+            {
+              "jobId": "job30",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.631314640286064,
+            "lng": 13.61687222632496
+          },
+          "time": {
+            "arrival": "2020-05-01T11:41:11Z",
+            "departure": "2020-05-01T11:46:11Z"
+          },
+          "distance": 51708,
+          "load": [
+            4
+          ],
+          "activities": [
+            {
+              "jobId": "job80",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.61515628491897,
+            "lng": 13.581410590638216
+          },
+          "time": {
+            "arrival": "2020-05-01T11:51:11Z",
+            "departure": "2020-05-01T11:56:11Z"
+          },
+          "distance": 54704,
+          "load": [
+            3
+          ],
+          "activities": [
+            {
+              "jobId": "job88",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.65236276668203,
+            "lng": 13.55552390343792
+          },
+          "time": {
+            "arrival": "2020-05-01T12:03:41Z",
+            "departure": "2020-05-01T12:08:41Z"
+          },
+          "distance": 59200,
+          "load": [
+            2
+          ],
+          "activities": [
+            {
+              "jobId": "job57",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.63727944550659,
+            "lng": 13.52838969316066
+          },
+          "time": {
+            "arrival": "2020-05-01T12:12:50Z",
+            "departure": "2020-05-01T12:17:50Z"
+          },
+          "distance": 61686,
+          "load": [
+            1
+          ],
+          "activities": [
+            {
+              "jobId": "job12",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.65924681639377,
+            "lng": 13.472857617022816
+          },
+          "time": {
+            "arrival": "2020-05-01T12:25:18Z",
+            "departure": "2020-05-01T13:30:18Z"
+          },
+          "distance": 66163,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "job21",
+              "type": "delivery",
+              "location": {
+                "lat": 52.65924681639377,
+                "lng": 13.472857617022816
+              },
+              "time": {
+                "start": "2020-05-01T12:25:18Z",
+                "end": "2020-05-01T12:30:18Z"
+              }
+            },
+            {
+              "jobId": "break",
+              "type": "break",
+              "location": {
+                "lat": 52.65924681639377,
+                "lng": 13.472857617022816
+              },
+              "time": {
+                "start": "2020-05-01T12:30:18Z",
+                "end": "2020-05-01T13:30:18Z"
+              }
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T14:15:03Z",
+            "departure": "2020-05-01T14:15:03Z"
+          },
+          "distance": 93014,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "arrival",
+              "type": "arrival"
+            }
+          ]
+        }
+      ],
+      "statistic": {
+        "cost": 138.11780000000002,
+        "distance": 93014,
+        "duration": 18903,
+        "times": {
+          "driving": 9303,
+          "serving": 6000,
+          "waiting": 0,
+          "break": 3600
+        }
+      }
+    },
+    {
+      "vehicleId": "vehicle_4",
+      "typeId": "vehicle",
+      "shiftIndex": 0,
+      "stops": [
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T09:00:00Z",
+            "departure": "2020-05-01T09:00:00Z"
+          },
+          "distance": 0,
+          "load": [
+            20
+          ],
+          "activities": [
+            {
+              "jobId": "departure",
+              "type": "departure"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.3718310071124,
+            "lng": 13.6209808349469
+          },
+          "time": {
+            "arrival": "2020-05-01T09:19:46Z",
+            "departure": "2020-05-01T09:24:46Z"
+          },
+          "distance": 11861,
+          "load": [
+            19
+          ],
+          "activities": [
+            {
+              "jobId": "job29",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.37820399885522,
+            "lng": 13.627376328080818
+          },
+          "time": {
+            "arrival": "2020-05-01T09:26:09Z",
+            "departure": "2020-05-01T09:31:09Z"
+          },
+          "distance": 12693,
+          "load": [
+            18
+          ],
+          "activities": [
+            {
+              "jobId": "job55",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.381928399507544,
+            "lng": 13.645531766368022
+          },
+          "time": {
+            "arrival": "2020-05-01T09:33:19Z",
+            "departure": "2020-05-01T09:38:19Z"
+          },
+          "distance": 13994,
+          "load": [
+            17
+          ],
+          "activities": [
+            {
+              "jobId": "job68",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.40084288639392,
+            "lng": 13.642467594454608
+          },
+          "time": {
+            "arrival": "2020-05-01T09:41:51Z",
+            "departure": "2020-05-01T09:46:51Z"
+          },
+          "distance": 16110,
+          "load": [
+            16
+          ],
+          "activities": [
+            {
+              "jobId": "job28",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.43296570060804,
+            "lng": 13.643991420159
+          },
+          "time": {
+            "arrival": "2020-05-01T09:52:49Z",
+            "departure": "2020-05-01T09:57:49Z"
+          },
+          "distance": 19687,
+          "load": [
+            15
+          ],
+          "activities": [
+            {
+              "jobId": "job33",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.463190492456945,
+            "lng": 13.613554910023778
+          },
+          "time": {
+            "arrival": "2020-05-01T10:04:24Z",
+            "departure": "2020-05-01T10:09:24Z"
+          },
+          "distance": 23635,
+          "load": [
+            14
+          ],
+          "activities": [
+            {
+              "jobId": "job54",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.454776559424914,
+            "lng": 13.683322791629369
+          },
+          "time": {
+            "arrival": "2020-05-01T10:17:26Z",
+            "departure": "2020-05-01T10:22:26Z"
+          },
+          "distance": 28459,
+          "load": [
+            13
+          ],
+          "activities": [
+            {
+              "jobId": "job23",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.5382920596089,
+            "lng": 13.692954956208103
+          },
+          "time": {
+            "arrival": "2020-05-01T10:37:58Z",
+            "departure": "2020-05-01T10:42:58Z"
+          },
+          "distance": 37779,
+          "load": [
+            12
+          ],
+          "activities": [
+            {
+              "jobId": "job75",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.546419236710086,
+            "lng": 13.648521066343363
+          },
+          "time": {
+            "arrival": "2020-05-01T10:48:12Z",
+            "departure": "2020-05-01T10:53:12Z"
+          },
+          "distance": 40920,
+          "load": [
+            11
+          ],
+          "activities": [
+            {
+              "jobId": "job76",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.551849807829306,
+            "lng": 13.643774974919484
+          },
+          "time": {
+            "arrival": "2020-05-01T10:54:20Z",
+            "departure": "2020-05-01T10:59:20Z"
+          },
+          "distance": 41605,
+          "load": [
+            10
+          ],
+          "activities": [
+            {
+              "jobId": "job91",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.58334355687185,
+            "lng": 13.576760681722128
+          },
+          "time": {
+            "arrival": "2020-05-01T11:08:53Z",
+            "departure": "2020-05-01T11:13:53Z"
+          },
+          "distance": 47337,
+          "load": [
+            9
+          ],
+          "activities": [
+            {
+              "jobId": "job90",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.59241334763584,
+            "lng": 13.509744819786375
+          },
+          "time": {
+            "arrival": "2020-05-01T11:21:37Z",
+            "departure": "2020-05-01T11:26:37Z"
+          },
+          "distance": 51980,
+          "load": [
+            8
+          ],
+          "activities": [
+            {
+              "jobId": "job1",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.610666515612586,
+            "lng": 13.453786792530872
+          },
+          "time": {
+            "arrival": "2020-05-01T11:33:46Z",
+            "departure": "2020-05-01T11:38:46Z"
+          },
+          "distance": 56274,
+          "load": [
+            7
+          ],
+          "activities": [
+            {
+              "jobId": "job2",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.63741350704259,
+            "lng": 13.407535187150431
+          },
+          "time": {
+            "arrival": "2020-05-01T11:45:58Z",
+            "departure": "2020-05-01T11:50:58Z"
+          },
+          "distance": 60591,
+          "load": [
+            6
+          ],
+          "activities": [
+            {
+              "jobId": "job92",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.636086845675266,
+            "lng": 13.380143547660284
+          },
+          "time": {
+            "arrival": "2020-05-01T11:54:04Z",
+            "departure": "2020-05-01T11:59:04Z"
+          },
+          "distance": 62447,
+          "load": [
+            5
+          ],
+          "activities": [
+            {
+              "jobId": "job6",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.53562856312486,
+            "lng": 13.506496879507567
+          },
+          "time": {
+            "arrival": "2020-05-01T12:22:31Z",
+            "departure": "2020-05-01T12:27:31Z"
+          },
+          "distance": 76521,
+          "load": [
+            4
+          ],
+          "activities": [
+            {
+              "jobId": "job42",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.53324585796829,
+            "lng": 13.512095116612326
+          },
+          "time": {
+            "arrival": "2020-05-01T12:28:17Z",
+            "departure": "2020-05-01T12:33:17Z"
+          },
+          "distance": 76984,
+          "load": [
+            3
+          ],
+          "activities": [
+            {
+              "jobId": "job53",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.53267346225449,
+            "lng": 13.509250688075811
+          },
+          "time": {
+            "arrival": "2020-05-01T12:33:37Z",
+            "departure": "2020-05-01T13:38:37Z"
+          },
+          "distance": 77187,
+          "load": [
+            2
+          ],
+          "activities": [
+            {
+              "jobId": "job18",
+              "type": "delivery",
+              "location": {
+                "lat": 52.53267346225449,
+                "lng": 13.509250688075811
+              },
+              "time": {
+                "start": "2020-05-01T12:33:37Z",
+                "end": "2020-05-01T12:38:37Z"
+              }
+            },
+            {
+              "jobId": "break",
+              "type": "break",
+              "location": {
+                "lat": 52.53267346225449,
+                "lng": 13.509250688075811
+              },
+              "time": {
+                "start": "2020-05-01T12:38:37Z",
+                "end": "2020-05-01T13:38:37Z"
+              }
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.53605129925688,
+            "lng": 13.420482298695124
+          },
+          "time": {
+            "arrival": "2020-05-01T13:48:39Z",
+            "departure": "2020-05-01T13:53:39Z"
+          },
+          "distance": 83210,
+          "load": [
+            1
+          ],
+          "activities": [
+            {
+              "jobId": "job20",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.46734369473697,
+            "lng": 13.474596188207942
+          },
+          "time": {
+            "arrival": "2020-05-01T14:07:47Z",
+            "departure": "2020-05-01T14:12:47Z"
+          },
+          "distance": 91692,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "job71",
+              "type": "delivery"
+            }
+          ]
+        },
+        {
+          "location": {
+            "lat": 52.4181,
+            "lng": 13.4637
+          },
+          "time": {
+            "arrival": "2020-05-01T14:22:00Z",
+            "departure": "2020-05-01T14:22:00Z"
+          },
+          "distance": 97223,
+          "load": [
+            0
+          ],
+          "activities": [
+            {
+              "jobId": "arrival",
+              "type": "arrival"
+            }
+          ]
+        }
+      ],
+      "statistic": {
+        "cost": 141.0446,
+        "distance": 97223,
+        "duration": 19320,
+        "times": {
+          "driving": 9720,
+          "serving": 6000,
+          "waiting": 0,
+          "break": 3600
+        }
+      }
+    }
+  ],
+  "unassigned": [],
+  "extras": {
+    "metrics": {
+      "timestamp": 0,
+      "duration": 3,
+      "generations": 2001,
+      "speed": 571.9093286913266,
+      "evolution": [
+        {
+          "number": 1,
+          "timestamp": 0.019401884,
+          "population": [
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 766.7916,
+              "improvement": 0.0,
+              "fitness": [
+                0.0,
+                5.0,
+                766.7916,
+                0.32221962355472256
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 738.0509999999999,
+              "improvement": -3.7481631254176606,
+              "fitness": [
+                0.0,
+                5.0,
+                738.0509999999999,
+                0.34687930193776745
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 758.356,
+              "improvement": -1.1001163810349541,
+              "fitness": [
+                0.0,
+                5.0,
+                758.356,
+                0.4172548089234996
+              ]
+            }
+          ]
+        },
+        {
+          "number": 1000,
+          "timestamp": 1.745913429,
+          "population": [
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 733.3467999999999,
+              "improvement": 0.0,
+              "fitness": [
+                0.0,
+                5.0,
+                733.3467999999999,
+                0.042503904193536
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 731.6514,
+              "improvement": -0.2311866636630786,
+              "fitness": [
+                0.0,
+                5.0,
+                731.6514,
+                0.06413530660072392
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 719.389,
+              "improvement": -1.9033014121013287,
+              "fitness": [
+                0.0,
+                5.0,
+                719.389,
+                0.08718600897198342
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 717.0786,
+              "improvement": -2.218350172115003,
+              "fitness": [
+                0.0,
+                5.0,
+                717.0786,
+                0.09800875858908246
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2000,
+          "timestamp": 3.498804842,
+          "population": [
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 705.863,
+              "improvement": 0.0,
+              "fitness": [
+                0.0,
+                5.0,
+                705.863,
+                0.043373667283739786
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 706.1102,
+              "improvement": 0.03502096015797783,
+              "fitness": [
+                0.0,
+                5.0,
+                706.1102,
+                0.03950565833841309
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 706.1759999999999,
+              "improvement": 0.0443428824006747,
+              "fitness": [
+                0.0,
+                5.0,
+                706.1759999999999,
+                0.04352787371309654
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 706.2126000000001,
+              "improvement": 0.04952802456000803,
+              "fitness": [
+                0.0,
+                5.0,
+                706.2126000000001,
+                0.03837934770280626
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 706.286,
+              "improvement": 0.05992664298877942,
+              "fitness": [
+                0.0,
+                5.0,
+                706.286,
+                0.038747991971710895
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 0,
+              "cost": 774.3522,
+              "improvement": 9.702902687915357,
+              "fitness": [
+                0.0,
+                5.0,
+                774.3522,
+                0.3736409163377396
+              ]
+            },
+            {
+              "tours": 5,
+              "unassigned": 1,
+              "cost": 697.557,
+              "improvement": -1.1767155949525672,
+              "fitness": [
+                1.0,
+                5.0,
+                697.557,
+                0.04865017922442967
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
