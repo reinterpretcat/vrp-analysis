@@ -2405,7 +2405,6 @@
   "unassigned": [],
   "extras": {
     "metrics": {
-      "timestamp": 0,
       "duration": 3,
       "generations": 3001,
       "speed": 793.616588630166,
