@@ -16,10 +16,10 @@
           "type": "blinks"
         }
       ],
-      "initialSize": 4,
-      "populationSize": 8,
-      "offspringSize": 8,
-      "eliteSize": 4
+      "initialSize": 2,
+      "populationSize": 4,
+      "offspringSize": 4,
+      "eliteSize": 2
     },
     "mutation": {
       "type": "ruin-recreate",
@@ -263,8 +263,8 @@
       ]
     },
     "termination": {
-      "maxTime": 600,
-      "maxGenerations": 2000
+      "maxTime": 120,
+      "maxGenerations": 3000
     },
     "telemetry": {
       "logging": {
@@ -274,7 +274,7 @@
       },
       "metrics": {
         "enabled": true,
-        "trackPopulation": 1000
+        "trackPopulation": 10
       }
     }
   }
