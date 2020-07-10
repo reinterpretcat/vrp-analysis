@@ -1,6 +1,40 @@
 import pandas as pd
 
 
+def extrac_solution_statistics(solution):
+    df = pd.json_normalize(solution)
+    df.columns = df.columns.str.replace('statistic.', '')
+    df.columns = df.columns.str.replace('times.', '')
+
+    df.drop(list(df.filter(regex = 'extras')), axis = 1, inplace = True)
+    df['tours'] = df.apply(lambda s: len(s.tours), axis=1)
+    df['unassigned'] = df.apply(lambda s: len(s.unassigned), axis=1)
+
+    return df
+
+
+def extract_tours_statistic(solution):
+    """
+    Extracts statistic data for all tours
+    """
+    def count_activity_types(stops, activity_type):
+        return sum([1 if a['type'] == activity_type else 0 for stop in stops for a in stop['activities']])
+
+    df = pd.json_normalize(solution['tours'])
+    df.columns = df.columns.str.replace('statistic.', '')
+    df.columns = df.columns.str.replace('times.', '')
+
+    df['max load'] = df.apply(lambda row: max([stop['load'] for stop in row.stops]), axis=1)
+    df['activities'] = df.apply(lambda row: sum(map(lambda stop: len(stop['activities']), row.stops)), axis=1)
+    df['deliveries'] = df.apply(lambda row: count_activity_types(row.stops, 'delivery'), axis=1)
+    df['pickups'] = df.apply(lambda row: count_activity_types(row.stops, 'pickup'), axis=1)
+    df['breaks'] = df.apply(lambda row: count_activity_types(row.stops, 'break'), axis=1)
+    df['reloads'] = df.apply(lambda row: count_activity_types(row.stops, 'reload'), axis=1)
+
+    df['stops'] = df.apply(lambda row: len(row.stops), axis=1)
+
+    return df
+
 def extract_evolution_metrics(solution):
     """
     Extracts metrics data for solution
@@ -17,26 +51,4 @@ def extract_evolution_metrics(solution):
     df = df.drop(['improvement', 'fitness'], axis=1)
     
     
-    return df
-
-
-def extract_tours_statistic(solution):
-    """
-    Extracts statistic data for all tours
-    """
-    def count_activity_types(stops, activity_type):
-        return sum([1 if a['type'] == activity_type else 0 for stop in stops for a in stop['activities']])
-
-    df = pd.json_normalize(solution['tours'])
-    df.columns = df.columns.str.replace('statistic.', '')
-    df.columns = df.columns.str.replace('times.', '')
-
-    df['activities'] = df.apply(lambda row: sum(map(lambda stop: len(stop['activities']), row.stops)), axis=1)
-    df['deliveries'] = df.apply(lambda row: count_activity_types(row.stops, 'delivery'), axis=1)
-    df['pickups'] = df.apply(lambda row: count_activity_types(row.stops, 'pickup'), axis=1)
-    df['breaks'] = df.apply(lambda row: count_activity_types(row.stops, 'break'), axis=1)
-    df['reloads'] = df.apply(lambda row: count_activity_types(row.stops, 'reload'), axis=1)
-
-    df['stops'] = df.apply(lambda row: len(row.stops), axis=1)
-
     return df
