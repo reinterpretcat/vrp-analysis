@@ -1,4 +1,20 @@
 import pandas as pd
+import geopandas as gpd
+import json
+from pathlib import Path
+
+def get_data(problem_path, solution_path):
+    with open(problem_path) as problem_file:
+        problem = json.load(problem_file)
+
+    with open(solution_path) as solution_file:
+        solution = json.load(solution_file)
+
+    solution_geo_path = Path(solution_path).with_suffix('.geojson')
+    if Path(solution_geo_path).is_file():
+        solution_geo = gpd.read_file(solution_geo_path)
+
+    return (problem, solution, solution_geo)
 
 
 def extrac_solution_statistics(solution):
@@ -24,12 +40,18 @@ def extract_tours_statistic(solution):
     df.columns = df.columns.str.replace('statistic.', '')
     df.columns = df.columns.str.replace('times.', '')
 
+    df.rename(columns = {'shiftIndex': 'shift', 'vehicleId': 'vehicle', 'typeId': 'type'}, inplace=True)
+
     df['max load'] = df.apply(lambda row: max([stop['load'] for stop in row.stops]), axis=1)
+
     df['activities'] = df.apply(lambda row: sum(map(lambda stop: len(stop['activities']), row.stops)), axis=1)
     df['deliveries'] = df.apply(lambda row: count_activity_types(row.stops, 'delivery'), axis=1)
     df['pickups'] = df.apply(lambda row: count_activity_types(row.stops, 'pickup'), axis=1)
     df['breaks'] = df.apply(lambda row: count_activity_types(row.stops, 'break'), axis=1)
     df['reloads'] = df.apply(lambda row: count_activity_types(row.stops, 'reload'), axis=1)
+
+    df['departure'] = df.apply(lambda row: row.stops[0]['time']['departure'], axis=1)
+    df['arrival'] = df.apply(lambda row: row.stops[-1]['time']['departure'], axis=1)
 
     df['stops'] = df.apply(lambda row: len(row.stops), axis=1)
 
