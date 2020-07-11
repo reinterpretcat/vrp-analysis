@@ -17,14 +17,71 @@ def get_data(problem_path, solution_path):
     return (problem, solution, solution_geo)
 
 
-def extrac_solution_statistics(solution):
+def extract_problem_statistics(problem):
+    df = pd.json_normalize(problem)
+
+    df['total vehicles'] = df.apply(lambda row: sum([len(vehicle['vehicleIds']) for vehicle in row['fleet.vehicles']]), axis=1)
+
+    columns = {'plan.jobs': 'jobs', 'fleet.vehicles': 'vehicle types', 'fleet.profiles': 'vehicle profiles', 'plan.relations': 'relations'}
+    for key, value in columns.items():
+        if key in df.columns:
+            df[key] = df.apply(lambda row: len(row[key]), axis=1)
+        else:
+            df[key] = 0
+
+    df = df.rename(columns, axis=1)
+    df = df.drop(['objectives.primary', 'objectives.secondary'], axis=1)
+
+    return df
+
+
+def extract_problem_objectives(problem):
+    df_1 = pd.json_normalize(problem, record_path=['objectives', 'primary']).assign(priority='primary')
+    df_2 = pd.json_normalize(problem, record_path=['objectives', 'secondary']).assign(priority='secondary')
+
+    df = df_1.append(df_2, sort=False)
+    df = df.reset_index()
+
+    return df
+
+
+def extract_vehicle_statistics(problem):
+    df_1 = pd.json_normalize(problem['fleet']['vehicles'], record_path=['shifts'])
+
+    for key in ['breaks', 'reloads']:
+        if key in df_1.columns:
+            df_1[key] = df_1.apply(lambda row: len(row[key]), axis=1)
+        else:
+            df_1[key] = df_1.apply(lambda row: 0, axis=1)
+            
+
+    df_1['start location'] = df_1.apply(lambda row: '{},{}'.format(row['start.location.lat'], row['start.location.lng']), axis=1)
+    df_1['start time'] = df_1.apply(lambda row: row['start.time'], axis=1)
+    if 'end.location.lat' in df_1.columns:
+        df_1['end location'] = df_1.apply(lambda row: '{},{}'.format(row['end.location.lat'], row['end.location.lng']), axis=1)
+        df_1['end time'] = df_1.apply(lambda row: row['end.time'], axis=1)
+        
+    df_1.drop(list(df_1.filter(regex = 'start\.|end\.')), axis = 1, inplace = True)
+
+
+    df_2 = pd.json_normalize(problem['fleet']['vehicles'])[['typeId', 'vehicleIds', 'capacity']]
+    df_2['vehicleIds'] = df_2.apply(lambda row: len(row['vehicleIds']), axis=1)
+
+
+    df = pd.concat([df_2, df_1], axis=1)
+    df = df.rename({'vehicleIds': 'available', 'typeId': 'type'}, axis=1)
+
+    return df
+
+
+def extract_solution_statistics(solution):
     df = pd.json_normalize(solution)
     df.columns = df.columns.str.replace('statistic.', '')
     df.columns = df.columns.str.replace('times.', '')
 
     df.drop(list(df.filter(regex = 'extras')), axis = 1, inplace = True)
-    df['tours'] = df.apply(lambda s: len(s.tours), axis=1)
-    df['unassigned'] = df.apply(lambda s: len(s.unassigned), axis=1)
+    df['tours'] = df.apply(lambda row: len(row.tours), axis=1)
+    df['unassigned'] = df.apply(lambda row: len(row.unassigned), axis=1)
 
     return df
 
@@ -50,8 +107,8 @@ def extract_tours_statistic(solution):
     df['breaks'] = df.apply(lambda row: count_activity_types(row.stops, 'break'), axis=1)
     df['reloads'] = df.apply(lambda row: count_activity_types(row.stops, 'reload'), axis=1)
 
-    df['departure'] = df.apply(lambda row: row.stops[0]['time']['departure'], axis=1)
-    df['arrival'] = df.apply(lambda row: row.stops[-1]['time']['departure'], axis=1)
+    df['start'] = df.apply(lambda row: row.stops[0]['time']['departure'], axis=1)
+    df['finish'] = df.apply(lambda row: row.stops[-1]['time']['departure'], axis=1)
 
     df['stops'] = df.apply(lambda row: len(row.stops), axis=1)
 
