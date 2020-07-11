@@ -2,6 +2,7 @@ import pandas as pd
 import geopandas as gpd
 import json
 from pathlib import Path
+from dateutil.parser import parse
 
 def get_data(problem_path, solution_path):
     with open(problem_path) as problem_file:
@@ -44,6 +45,41 @@ def extract_problem_objectives(problem):
 
     return df
 
+def extract_jobs_statistics(problem):
+    def get_tasks_statistic(tasks):
+        max_duration = 0
+        max_tw_duration = 0
+        max_demand = []
+        for task in tasks:
+            for place in task['places']:
+                max_duration = place['duration']
+                max_tw_duration = max(max_tw_duration, max([(parse(end) - parse(start)).seconds for start, end in place.get('times', [])], default = 0))
+            max_demand = task['demand']
+
+        return max_demand, max_duration, max_tw_duration
+
+    def get_job_statistics(job):
+        max_demand1, max_duration1, max_tw_duration1 = get_tasks_statistic(job.get('pickups', {}))
+        max_demand2, max_duration2, max_tw_duration2 = get_tasks_statistic(job.get('deliveries', {}))
+        
+        return max(max_demand1, max_demand2), max(max_duration1, max_duration2), max(max_tw_duration1, max_tw_duration2)
+
+    jobs=[]
+    for job in problem['plan']['jobs']:
+        max_demand, max_duration, max_tw_duration = get_job_statistics(job)
+        jobs.append({
+            'id': job['id'], 
+            'deliveries': len(job.get('deliveries', [])), 
+            'pickups': len(job.get('pickups', [])),
+            'replacements': len(job.get('replacements', [])),
+            'services': len(job.get('services', [])),
+            'demand': max_demand,
+            'service time duration': max_duration,
+            'time window duration': max_tw_duration,
+        })
+        
+
+    return pd.json_normalize(jobs)
 
 def extract_vehicle_statistics(problem):
     df_1 = pd.json_normalize(problem['fleet']['vehicles'], record_path=['shifts'])
