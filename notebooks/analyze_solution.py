@@ -15,8 +15,27 @@ def get_data(problem_path, solution_path):
     if Path(solution_geo_path).is_file():
         solution_geo = gpd.read_file(solution_geo_path)
 
-    return (problem, solution, solution_geo)
+    return (normalize_problem(problem), normalize_solution(solution), solution_geo)
 
+def normalize_problem(problem):
+    if 'objectives' not in problem:
+        problem['objectives'] = { 
+            'primary': [{'type': 'minimize-unassigned'}, {'type': 'minimize-tours'}],
+            'secondary': [{'type': 'minimize-cost'}],
+        }
+    return problem
+
+def normalize_solution(solution):
+    if 'extras' not in solution:
+        solution['extras'] = { 
+            'metrics': {
+                'duration': 0,
+                'generations': 0,
+                'speed': 0,
+                'evolution': []
+            }
+        }
+    return solution
 
 def extract_problem_statistics(problem):
     df = pd.json_normalize(problem)
@@ -154,16 +173,18 @@ def extract_evolution_metrics(solution):
     """
     Extracts metrics data for solution
     """
-    df = pd.json_normalize(solution['extras']['metrics']['evolution'], record_path=['population'], meta=['number', 'timestamp'])
-    df = df.drop_duplicates(subset='number', keep="first")
-    df = df.reset_index()
+    evolution = solution['extras']['metrics']['evolution']
 
-    df_fit = pd.DataFrame([pd.Series(x) for x in df.fitness])
-    df_fit.columns = ['fitness_{}'.format(x+1) for x in df_fit.columns]
+    if len(evolution) != 0:
+        df = pd.json_normalize(evolution, record_path=['population'], meta=['number', 'timestamp'])
+        df = df.drop_duplicates(subset='number', keep="first")
+        df = df.reset_index()
 
-    df = pd.concat([df, df_fit], axis=1, sort=False)
+        df_fit = pd.DataFrame([pd.Series(x) for x in df.fitness])
+        df_fit.columns = ['fitness_{}'.format(x+1) for x in df_fit.columns]
 
-    df = df.drop(['improvement', 'fitness'], axis=1)
-    
-    
-    return df
+        df = pd.concat([df, df_fit], axis=1, sort=False)
+
+        return df.drop(['improvement', 'fitness'], axis=1)
+    else:
+        return pd.DataFrame(columns = ['timestamp', 'number'])
