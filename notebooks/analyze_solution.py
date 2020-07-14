@@ -14,27 +14,66 @@ def get_data(problem_path, solution_path):
     solution_geo_path = Path(solution_path).with_suffix('.geojson')
     if Path(solution_geo_path).is_file():
         solution_geo = gpd.read_file(solution_geo_path)
+    else:
+        solution_geo = gpd.GeoDataFrame.from_features([])
 
     return (normalize_problem(problem), normalize_solution(solution), solution_geo)
 
 def normalize_problem(problem):
     if 'objectives' not in problem:
-        problem['objectives'] = { 
+        problem['objectives'] = {
             'primary': [{'type': 'minimize-unassigned'}, {'type': 'minimize-tours'}],
             'secondary': [{'type': 'minimize-cost'}],
         }
+
     return problem
 
 def normalize_solution(solution):
     if 'extras' not in solution:
-        solution['extras'] = { 
-            'metrics': {
-                'duration': 0,
-                'generations': 0,
-                'speed': 0,
-                'evolution': []
+        solution['extras'] = {}
+
+    if not 'metrics' in solution['extras']:
+        if 'performance' in solution['extras']:
+            generations = len(solution['extras']['performance'])
+            duration = solution['extras']['performance'][-1]['timestamp'] - solution['extras']['performance'][0]['timestamp']
+            evolution = []
+            for iteration in solution['extras']['performance']:
+                evolution.append({
+                    'number': iteration['number'],
+                    'timestamp': iteration['timestamp'],
+                    'population': [
+                        {
+                            "tours": iteration['tours'],
+                            "unassigned": iteration['unassigned'],
+                            "cost": iteration['cost'],
+                            "improvement": 0.0,
+                            "fitness": [
+                                iteration['unassigned'],
+                                iteration['tours'],
+                                iteration['cost'],
+                            ]
+                        }
+                    ]
+                })
+            solution['extras']['metrics'] = {
+                'duration': duration,
+                'generations': generations,
+                'speed': generations / duration,
+                'evolution': evolution
             }
-        }
+        else:
+            solution['extras'] = {
+                'metrics': {
+                    'duration': 0,
+                    'generations': 0,
+                    'speed': 0,
+                    'evolution': []
+                }
+            }
+
+    if 'unassigned' not in solution:
+        solution['unassigned'] = []
+
     return solution
 
 def extract_problem_statistics(problem):
