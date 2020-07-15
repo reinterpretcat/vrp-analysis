@@ -1975,7 +1975,8 @@
         {
           "type": "balance-distance",
           "options": {
-            "tolerance": 0.01
+            "tolerance": 0.01,
+            "threshold": 0.05
           }
         }
       ]
