@@ -30,7 +30,10 @@ class SolverClient:
 
 if len(sys.argv) < 4:
     print("Provide path to cli, experiment dir path and number of samples")
-    sys.exit(1)
+    #sys.exit(1)
+    cli_path = "/home/builuk/playground/vrp-rst/target/release/vrp-cli"
+    experiment_path = "/home/builuk/playground/vrp-analysis/experiments/demo"
+    samples = 5
 else:
     cli_path = sys.argv[1]
     experiment_path = sys.argv[2]
@@ -80,5 +83,5 @@ with open("{}/out/best_known_solutions.csv".format(experiment_path), mode='w') a
             best_known_writer.writerow([
                 config_file_name, problem_file_name, idx, solution.extras.metrics.duration, solution.extras.metrics.generations,
                 "{:.4f}".format(round(solution.extras.metrics.speed, 2)), "{:.4f}".format(round(solution.statistic.cost, 2)),
-                solution.statistic.times.waiting, len(solution.tours), len(solution.unassigned)
+                solution.statistic.times.waiting, len(solution.tours), len(getattr(solution, "unassigned", []))
             ])

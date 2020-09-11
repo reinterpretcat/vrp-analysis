@@ -1,4 +1,9 @@
 {
+  "population": {
+    "offspring": {
+      "size": 4
+    }
+  },
   "termination": {
     "maxTime": 120,
     "maxGenerations": 3000

@@ -19006,32 +19006,1016 @@
   "fleet": {
     "vehicles": [
       {
-        "typeId": "vehicle",
+        "typeId": "vehicle_t1",
         "vehicleIds": [
-          "vehicle_1",
-          "vehicle_2",
-          "vehicle_3",
-          "vehicle_4",
-          "vehicle_5",
-          "vehicle_6",
-          "vehicle_7",
-          "vehicle_8",
-          "vehicle_9",
-          "vehicle_10",
-          "vehicle_11",
-          "vehicle_12",
-          "vehicle_13",
-          "vehicle_14",
-          "vehicle_15",
-          "vehicle_16",
-          "vehicle_17",
-          "vehicle_18",
-          "vehicle_19",
-          "vehicle_20",
-          "vehicle_21",
-          "vehicle_22",
-          "vehicle_23",
-          "vehicle_24",
+          "vehicle_1"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+    },
+    {
+        "typeId": "vehicle_t2",
+        "vehicleIds": [
+          "vehicle_2"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t3",
+        "vehicleIds": [
+          "vehicle_3"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t4",
+        "vehicleIds": [
+          "vehicle_4"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t5",
+        "vehicleIds": [
+          "vehicle_5"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_6",
+        "vehicleIds": [
+          "vehicle_6"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t7",
+        "vehicleIds": [
+          "vehicle_7"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t8",
+        "vehicleIds": [
+          "vehicle_8"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t9",
+        "vehicleIds": [
+          "vehicle_9"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t10",
+        "vehicleIds": [
+          "vehicle_10"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t11",
+        "vehicleIds": [
+          "vehicle_11"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t12",
+        "vehicleIds": [
+          "vehicle_12"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t13",
+        "vehicleIds": [
+          "vehicle_13"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t14",
+        "vehicleIds": [
+          "vehicle_14"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t15",
+        "vehicleIds": [
+          "vehicle_15"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t16",
+        "vehicleIds": [
+          "vehicle_16"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t17",
+        "vehicleIds": [
+          "vehicle_17"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t18",
+        "vehicleIds": [
+          "vehicle_18"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t19",
+        "vehicleIds": [
+          "vehicle_19"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t20",
+        "vehicleIds": [
+          "vehicle_20"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t21",
+        "vehicleIds": [
+          "vehicle_21"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t22",
+        "vehicleIds": [
+          "vehicle_22"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t23",
+        "vehicleIds": [
+          "vehicle_23"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t24",
+        "vehicleIds": [
+          "vehicle_24"
+        ],
+        "profile": "car",
+        "costs": {
+          "fixed": 25.0,
+          "distance": 0.0002,
+          "time": 0.005
+        },
+        "shifts": [
+          {
+            "start": {
+              "earliest": "2020-05-01T09:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "end": {
+              "latest": "2020-05-01T18:00:00.00Z",
+              "location": {
+                "lat": 52.4181,
+                "lng": 13.4637
+              }
+            },
+            "breaks": [
+              {
+                "time": [
+                  "2020-05-01T12:30:00.00Z",
+                  "2020-05-01T13:00:00.00Z"
+                ],
+                "duration": 3600.0
+              }
+            ]
+          }
+        ],
+        "capacity": [
+          40
+        ]
+      },
+      {
+        "typeId": "vehicle_t25",
+        "vehicleIds": [
           "vehicle_25"
         ],
         "profile": "car",

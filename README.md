@@ -8,6 +8,7 @@ This repository contains a collection of scripts and jupyter notebooks to perfor
 
 * install python
 * install jupyter notebook
+* install dependencies from `requirements.txt`
 * install/build [VRP solver](https://github.com/reinterpretcat/vrp)
 
 ## Prepare data
@@ -28,5 +29,3 @@ Please note, that the solver uses routing matrix approximation via great-circle 
 * select one of available notebooks
 * change path to test data
 * run kernel
-
-Note: you can install missing dependencies directly from notebook, e.g. `%pip install pandas`

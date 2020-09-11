@@ -46,12 +46,9 @@ def normalize_solution(solution):
                             "tours": iteration['tours'],
                             "unassigned": iteration['unassigned'],
                             "cost": iteration['cost'],
-                            "improvement": 0.0,
-                            "fitness": [
-                                iteration['unassigned'],
-                                iteration['tours'],
-                                iteration['cost'],
-                            ]
+                            "iAllRatio": iteration['iAllRatio'],
+                            "i1000Ratio": iteration['i1000Ratio'],
+                            "isImprovement": iteration['isImprovement']
                         }
                     ]
                 })
@@ -150,10 +147,10 @@ def extract_vehicle_statistics(problem):
             
 
     df_1['start location'] = df_1.apply(lambda row: '{},{}'.format(row['start.location.lat'], row['start.location.lng']), axis=1)
-    df_1['start time'] = df_1.apply(lambda row: row['start.time'], axis=1)
+    df_1['start time'] = df_1.apply(lambda row: row['start.earliest'], axis=1)
     if 'end.location.lat' in df_1.columns:
         df_1['end location'] = df_1.apply(lambda row: '{},{}'.format(row['end.location.lat'], row['end.location.lng']), axis=1)
-        df_1['end time'] = df_1.apply(lambda row: row['end.time'], axis=1)
+        df_1['end time'] = df_1.apply(lambda row: row['end.latest'], axis=1)
         
     df_1.drop(list(df_1.filter(regex = 'start\.|end\.')), axis = 1, inplace = True)
 
@@ -208,7 +205,7 @@ def extract_tours_statistic(solution):
 
     return df
 
-def extract_evolution_metrics(solution):
+def extract_evolution_metrics(objectives, solution):
     """
     Extracts metrics data for solution
     """
@@ -220,7 +217,7 @@ def extract_evolution_metrics(solution):
         df = df.reset_index()
 
         df_fit = pd.DataFrame([pd.Series(x) for x in df.fitness])
-        df_fit.columns = ['fitness_{}'.format(x+1) for x in df_fit.columns]
+        df_fit.columns = [objectives.type[x] for x in df_fit.columns]
 
         df = pd.concat([df, df_fit], axis=1, sort=False)
 
