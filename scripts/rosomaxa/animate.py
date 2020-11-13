@@ -8,6 +8,18 @@ from data import animation_data
 objectives = 3      # amount of objectives to be plotted
 figsize = [12, 6]   # figure size, inches
 
+class AnimationPlayer():
+    def __init__(self, fig, ani):
+        self.pause = False
+        self.ani = ani
+        fig.canvas.mpl_connect('button_press_event', self.onClick)
+
+    def onClick(self, event):
+        if self.pause:
+            self.ani.event_source.stop()
+        else:
+            self.ani.event_source.start()
+        self.pause ^= True
 
 # determine grid size
 rows_min=sys.maxsize
@@ -42,8 +54,9 @@ for i in range(0, len(animation_matrices)):
 
     ims.append(ims_frame)
 
+ani = animation.ArtistAnimation(fig, ims, interval=1000, blit=True, repeat_delay=1000)
+player = AnimationPlayer(fig, ani)
 
-ani = animation.ArtistAnimation(fig, ims, interval=500, blit=True, repeat_delay=1000)
 #ani.save('mwe.mp4')
 
 plt.tight_layout(True)
