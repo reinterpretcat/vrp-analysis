@@ -32,16 +32,20 @@ fig, ax = plt.subplots(nrows=1, ncols=max(objectives + 2, 2), figsize=figsize)
 
 ims=[]
 for i in range(0, len(animation_matrices)):
+    ims_frame=[]
     for j, axi in enumerate(ax.flat):
         plot_data = animation_matrices[i].get(j)
         if plot_data != None:
             (title, min, max, matrix) = plot_data
             axi.set_title(title)
-            im = axi.imshow(matrix, cmap='jet', vmin=min, vmax=max, interpolation='nearest')
-            ims.append([im])
+            im = axi.imshow(matrix, cmap='jet', vmin=min, vmax=max)
+            ims_frame.append(im)
+
+    ims.append(ims_frame)
 
 
-ani = animation.ArtistAnimation(fig, ims, interval=50, blit=True, repeat_delay=1000)
-# ani.save('mwe.mp4')
+ani = animation.ArtistAnimation(fig, ims, interval=500, blit=True, repeat_delay=1000)
+#ani.save('mwe.mp4')
 
+plt.tight_layout(True)
 plt.show()
