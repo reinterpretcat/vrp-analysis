@@ -1,8 +1,14 @@
 import numpy as np
+import sys
 
-def get_matrices(data, objectives):
+def get_matrices(data, objectives, rows_min=sys.maxsize, rows_max=-sys.maxsize, cols_min=sys.maxsize, cols_max=-sys.maxsize):
     # network state date from logs or metrics
-    (rows_min, rows_max, cols_min, cols_max, total_count, nodes) = data
+    (data_rows_min, data_rows_max, data_cols_min, data_cols_max, total_count, nodes) = data
+
+    rows_min = min(rows_min, data_rows_min)
+    rows_max = max(rows_max, data_rows_max)
+    cols_min = min(cols_min, data_cols_min)
+    cols_max = max(cols_max, data_cols_max)
 
     print(F"total nodes: {total_count}")
 
