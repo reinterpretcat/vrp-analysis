@@ -7,7 +7,7 @@ from data import animation_data
 
 objectives = 3      # amount of objectives to be plotted
 weights = 5         # amount of weights
-figsize = [12, 8]  # figure size, inches
+figsize = [12, 8]   # figure size, inches
 plotsize = [2, 6]   # amout of subplots in plot
 
 
