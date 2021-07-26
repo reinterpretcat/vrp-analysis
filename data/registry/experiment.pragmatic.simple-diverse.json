@@ -1,0 +1,58 @@
+{
+  "description": "master",
+  "versions": [
+    {
+      "name": "master",
+      "url": "https://github.com/reinterpretcat/vrp.git@master"
+    }
+  ],
+  "data": {
+    "config": {
+      "url": "https://github.com/reinterpretcat/vrp-analysis/data/config.telemetry.generations.zip",
+      "files": [
+        {
+          "name": "default",
+          "path": "config.telemetry.generations.json"
+        }
+      ]
+    },
+    "pragmatic": {
+      "url": "https://github.com/reinterpretcat/vrp-analysis/pragmatic/diverse.set.2020-07_1.zip",
+      "files": [
+        {
+          "name": "delivery.100",
+          "path": "simple.delivery.100.json",
+          "matrices": []
+        },
+        {
+          "name": "delivery.1000",
+          "path": "simple.delivery.1000.json",
+          "matrices": []
+        },
+        {
+          "name": "multi-job.25",
+          "path": "simple.multi-job.25.json",
+          "matrices": []
+        },
+        {
+          "name": "multi-vtype.1000",
+          "path": "simple.multi-vtype.1000",
+          "matrices": []
+        },
+        {
+          "name": "reload.100",
+          "path": "simple.reload.100.json",
+          "matrices": []
+        },
+        {
+          "name": "delivery.1000.json",
+          "path": "time.delivery.1000.json",
+          "matrices": []
+        }
+      ]
+    },
+    "parameters": {
+      "iterations": 5
+    }
+  }
+}

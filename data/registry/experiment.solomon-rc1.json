@@ -1,0 +1,32 @@
+{
+  "description": "master",
+  "versions": [
+    {
+      "name": "master",
+      "url": "https://github.com/reinterpretcat/vrp.git@master"
+    }
+  ],
+  "data": {
+    "config": {
+      "url": "https://github.com/reinterpretcat/vrp-analysis/data/config.telemetry.generations.zip",
+      "files": [
+        {
+          "name": "default",
+          "path": "config.telemetry.generations.json"
+        }
+      ]
+    },
+    "solomon": {
+      "url": "https://github.com/reinterpretcat",
+      "files": [
+        {
+          "name": "rc1_10_1",
+          "path": "RC1_10_1.txt"
+        }
+      ]
+    }
+  },
+  "parameters": {
+    "iterations": 10
+  }
+}
