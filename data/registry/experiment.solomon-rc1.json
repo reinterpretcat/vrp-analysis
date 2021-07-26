@@ -8,7 +8,7 @@
   ],
   "data": {
     "config": {
-      "url": "https://github.com/reinterpretcat/vrp-analysis/data/config.telemetry.generations.zip",
+      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/configs/config.telemetry.generations.zip",
       "files": [
         {
           "name": "default",
@@ -17,7 +17,7 @@
       ]
     },
     "solomon": {
-      "url": "https://github.com/reinterpretcat",
+      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/solomon/RC1_10_1.zip",
       "files": [
         {
           "name": "rc1_10_1",
