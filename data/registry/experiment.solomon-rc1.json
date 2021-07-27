@@ -4,6 +4,10 @@
     {
       "name": "master",
       "url": "https://github.com/reinterpretcat/vrp.git@master"
+    },
+    {
+      "name": "1.10.8",
+      "url": "https://github.com/reinterpretcat/vrp.git@v1.10.8"
     }
   ],
   "data": {

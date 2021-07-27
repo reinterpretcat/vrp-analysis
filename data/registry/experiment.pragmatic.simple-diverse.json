@@ -4,6 +4,10 @@
     {
       "name": "master",
       "url": "https://github.com/reinterpretcat/vrp.git@master"
+    },
+    {
+      "name": "1.10.8",
+      "url": "https://github.com/reinterpretcat/vrp.git@v1.10.8"
     }
   ],
   "data": {
@@ -36,7 +40,7 @@
         },
         {
           "name": "multi-vtype.1000",
-          "path": "simple.multi-vtype.1000",
+          "path": "simple.multi-vtype.1000.json",
           "matrices": []
         },
         {
@@ -50,9 +54,9 @@
           "matrices": []
         }
       ]
-    },
-    "parameters": {
-      "iterations": 5
     }
+  },
+  "parameters": {
+    "iterations": 3
   }
 }
