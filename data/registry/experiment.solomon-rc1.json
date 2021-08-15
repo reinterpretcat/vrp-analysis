@@ -4,19 +4,15 @@
     {
       "name": "master",
       "url": "https://github.com/reinterpretcat/vrp.git@master"
-    },
-    {
-      "name": "1.10.8",
-      "url": "https://github.com/reinterpretcat/vrp.git@v1.10.8"
     }
   ],
   "data": {
     "config": {
-      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/configs/config.telemetry.generations.zip",
+      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/configs/config.telemetry.time.zip",
       "files": [
         {
           "name": "default",
-          "path": "config.telemetry.generations.json"
+          "path": "config.telemetry.time.json"
         }
       ]
     },
@@ -31,6 +27,6 @@
     }
   },
   "parameters": {
-    "iterations": 10
+    "iterations": 1
   }
 }
