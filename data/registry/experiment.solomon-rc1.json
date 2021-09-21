@@ -16,15 +16,18 @@
         }
       ]
     },
-    "solomon": {
-      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/solomon/RC1_10_1.zip",
-      "files": [
-        {
-          "name": "rc1_10_1",
-          "path": "RC1_10_1.txt"
-        }
-      ]
-    }
+    "problems":[
+      {
+        "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/solomon/RC1_10_1.zip",
+        "format": "solomon",
+        "files": [
+          {
+            "name": "rc1_10_1",
+            "path": "RC1_10_1.txt"
+          }
+        ]
+      }
+    ]
   },
   "parameters": {
     "iterations": 1

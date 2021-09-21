@@ -20,41 +20,44 @@
         }
       ]
     },
-    "pragmatic": {
-      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/pragmatic/diverse.set.2020-07_1.zip",
-      "files": [
-        {
-          "name": "delivery.100",
-          "path": "simple.delivery.100.json",
-          "matrices": []
-        },
-        {
-          "name": "delivery.1000",
-          "path": "simple.delivery.1000.json",
-          "matrices": []
-        },
-        {
-          "name": "multi-job.25",
-          "path": "simple.multi-job.25.json",
-          "matrices": []
-        },
-        {
-          "name": "multi-vtype.1000",
-          "path": "simple.multi-vtype.1000.json",
-          "matrices": []
-        },
-        {
-          "name": "reload.100",
-          "path": "simple.reload.100.json",
-          "matrices": []
-        },
-        {
-          "name": "delivery.1000.json",
-          "path": "time.delivery.1000.json",
-          "matrices": []
-        }
-      ]
-    }
+    "problems": [
+      {
+        "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/pragmatic/diverse.set.2020-07_1.zip",
+        "format": "pragmatic",
+        "files": [
+          {
+            "name": "delivery.100",
+            "path": "simple.delivery.100.json",
+            "matrices": []
+          },
+          {
+            "name": "delivery.1000",
+            "path": "simple.delivery.1000.json",
+            "matrices": []
+          },
+          {
+            "name": "multi-job.25",
+            "path": "simple.multi-job.25.json",
+            "matrices": []
+          },
+          {
+            "name": "multi-vtype.1000",
+            "path": "simple.multi-vtype.1000.json",
+            "matrices": []
+          },
+          {
+            "name": "reload.100",
+            "path": "simple.reload.100.json",
+            "matrices": []
+          },
+          {
+            "name": "delivery.1000.json",
+            "path": "time.delivery.1000.json",
+            "matrices": []
+          }
+        ]
+      }
+    ]
   },
   "parameters": {
     "iterations": 3
