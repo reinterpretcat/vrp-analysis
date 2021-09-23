@@ -24,6 +24,8 @@
       {
         "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/pragmatic/diverse.set.2020-07_1.zip",
         "format": "pragmatic",
+        "name": "diverse",
+        "extraArgs": "",
         "files": [
           {
             "name": "delivery.100",

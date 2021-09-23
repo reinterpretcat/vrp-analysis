@@ -20,6 +20,8 @@
       {
         "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/solomon/RC1_10_1.zip",
         "format": "solomon",
+        "name": "rc1_10",
+        "extraArgs": "",
         "files": [
           {
             "name": "rc1_10_1",
