@@ -8,11 +8,11 @@
     ],
     "data": {
       "config": {
-        "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/configs/config.telemetry.generations.zip",
+        "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/configs/config.telemetry.time.10mins.zip",
         "files": [
           {
             "name": "default",
-            "path": "config.telemetry.generations.json"
+            "path": "config.telemetry.time.10mins.json"
           }
         ]
       },
@@ -42,10 +42,6 @@
             {
               "name": "A-n39-k5.vrp",
               "path": "A/A-n39-k5.vrp"
-            },
-            {
-              "name": "A-n44-k6.vrp",
-              "path": "A/A-n44-k6.vrp"
             },
             {
               "name": "A-n44-k6.vrp",
