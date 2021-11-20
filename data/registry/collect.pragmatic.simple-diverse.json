@@ -6,8 +6,8 @@
       "url": "https://github.com/reinterpretcat/vrp.git@master"
     },
     {
-      "name": "v1.11.4",
-      "url": "https://github.com/reinterpretcat/vrp.git@v1.11.4"
+      "name": "vnext",
+      "url": "https://github.com/reinterpretcat/vrp.git@vnext"
     }
   ],
   "data": {
