@@ -7,7 +7,7 @@
     },
     {
       "name": "vnext",
-      "url": "https://github.com/reinterpretcat/vrp.git@v1.11.5"
+      "url": "https://github.com/reinterpretcat/vrp.git@jemalloc"
     }
   ],
   "data": {
@@ -53,7 +53,7 @@
             "matrices": []
           },
           {
-            "name": "delivery.1000.json",
+            "name": "delivery.1000",
             "path": "time.delivery.1000.json",
             "matrices": []
           }
