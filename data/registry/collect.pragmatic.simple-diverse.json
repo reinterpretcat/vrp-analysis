@@ -12,7 +12,7 @@
   ],
   "data": {
     "config": {
-      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/configs/config.telemetry.generations.zip",
+      "url": "https://github.com/reinterpretcat/vrp-analysis/raw/master/data/configs/config.telemetry.time.10mins.zip",
       "files": [
         {
           "name": "default",
