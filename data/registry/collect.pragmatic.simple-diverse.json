@@ -16,7 +16,7 @@
       "files": [
         {
           "name": "default",
-          "path": "config.telemetry.generations.json"
+          "path": "config.telemetry.time.10mins.json"
         }
       ]
     },
