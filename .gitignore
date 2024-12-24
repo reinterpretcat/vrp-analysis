@@ -131,3 +131,5 @@ dmypy.json
 out
 
 .vscode
+
+solution_plot.png
